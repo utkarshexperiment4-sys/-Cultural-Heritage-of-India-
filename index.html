@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>भारत की सांस्कृतिक विरासत</title>
+    <meta name="description" content="भारत की सांस्कृतिक विरासत: प्राचीन स्थल, पारंपरिक कला, और विविध परंपराओं की झलक।" />
+
+    <style>
+        :root {
+            --color-bg: #f5f1e8;
+            --color-bg-alt: #fdf7ef;
+            --color-primary: #8b2f3c;
+            --color-primary-soft: #b75a52;
+            --color-accent: #c49a47;
+            --color-text: #2b1a1a;
+            --color-muted: #7d5f5f;
+            --color-card: #ffffff;
+            --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+            --radius-lg: 18px;
+            --radius-md: 12px;
+            --radius-pill: 999px;
+            --transition-fast: 0.2s ease-out;
+            --max-width: 1120px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Noto Sans Devanagari", "Mangal", "Kohinoor Devanagari",
+                system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img,
+        svg {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Layout helpers */
+
+        .container {
+            max-width: var(--max-width);
+            margin-inline: auto;
+            padding-inline: 1.25rem;
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                padding-inline: 1.5rem;
+            }
+        }
+
+        .section {
+            padding-block: 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .section {
+                padding-block: 5rem;
+            }
+        }
+
+        .section-alt {
+            background-color: var(--color-bg-alt);
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(1.9rem, 2.3vw + 1.4rem, 2.5rem);
+            margin: 0 0 0.6rem;
+            letter-spacing: 0.03em;
+        }
+
+        .section-heading p {
+            margin: 0;
+            color: var(--color-muted);
+            max-width: 36rem;
+            margin-inline: auto;
+            font-size: 0.98rem;
+        }
+
+        /* Header & Navigation */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(14px);
+            background: rgba(245, 241, 232, 0.92);
+            border-bottom: 1px solid rgba(139, 47, 60, 0.08);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-block: 0.7rem;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .brand-mark {
+            width: 34px;
+            height: 34px;
+            border-radius: 40% 60% 50% 50%;
+            background: radial-gradient(circle at 30% 20%, #ffd89b, #c49a47);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #4b230f;
+        }
+
+        .brand-text-main {
+            font-weight: 700;
+            font-size: 1.05rem;
+            letter-spacing: 0.04em;
+        }
+
+        .brand-text-sub {
+            font-size: 0.72rem;
+            color: var(--color-muted);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.25rem;
+            align-items: center;
+            font-size: 0.96rem;
+        }
+
+        .nav-links a {
+            position: relative;
+            padding-block: 0.25rem;
+            color: var(--color-text);
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+            transition: width var(--transition-fast);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a:focus-visible::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-highlight {
+            padding: 0.35rem 0.9rem;
+            border-radius: var(--radius-pill);
+            border: 1px solid rgba(196, 154, 71, 0.55);
+            background: linear-gradient(90deg, rgba(196, 154, 71, 0.12), rgba(255, 248, 234, 0.7));
+            font-size: 0.83rem;
+            color: #4b260e;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .nav-highlight-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 999px;
+            background: radial-gradient(circle at 30% 30%, #ffecc1, #c49a47);
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            padding: 0.25rem;
+            cursor: pointer;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 999px;
+            background-color: var(--color-text);
+            position: relative;
+            transition: transform 0.2s ease-out, background-color 0.2s ease-out;
+        }
+
+        .nav-toggle span::before,
+        .nav-toggle span::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 22px;
+            height: 2px;
+            border-radius: 999px;
+            background-color: var(--color-text);
+            transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+        }
+
+        .nav-toggle span::before {
+            top: -6px;
+        }
+
+        .nav-toggle span::after {
+            top: 6px;
+        }
+
+        .site-header.nav-open .nav-toggle span {
+            background-color: transparent;
+        }
+
+        .site-header.nav-open .nav-toggle span::before {
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        .site-header.nav-open .nav-toggle span::after {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                padding-block: 0.5rem;
+            }
+
+            .nav-links {
+                position: absolute;
+                inset-inline: 0;
+                top: 100%;
+                background: rgba(245, 241, 232, 0.98);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 1.25rem;
+                max-height: 0;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(139, 47, 60, 0.08);
+                transition: max-height 0.26s ease-out;
+            }
+
+            .nav-links a {
+                padding-block: 0.35rem;
+            }
+
+            .nav-highlight {
+                margin-block: 0.6rem 0.9rem;
+            }
+
+            .site-header.nav-open .nav-links {
+                max-height: 260px;
+                padding-bottom: 0.9rem;
+            }
+
+            .nav-toggle {
+                display: inline-flex;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .nav-links {
+                position: static;
+                max-height: none;
+                padding: 0;
+            }
+        }
+
+        /* Buttons */
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-pill);
+            border: none;
+            background: linear-gradient(135deg, #8b2f3c, #b75a52);
+            color: #fff7ea;
+            font-weight: 600;
+            font-size: 0.98rem;
+            cursor: pointer;
+            box-shadow: 0 10px 22px rgba(139, 47, 60, 0.35);
+            transition: transform var(--transition-fast),
+                box-shadow var(--transition-fast),
+                filter var(--transition-fast);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 16px 30px rgba(139, 47, 60, 0.42);
+            filter: brightness(1.02);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+            box-shadow: 0 8px 18px rgba(139, 47, 60, 0.3);
+        }
+
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            padding: 0.72rem 1.2rem;
+            border-radius: var(--radius-pill);
+            border: 1px solid rgba(139, 47, 60, 0.28);
+            background: rgba(255, 248, 240, 0.85);
+            color: var(--color-primary);
+            font-size: 0.92rem;
+            cursor: pointer;
+            transition: background var(--transition-fast),
+                border-color var(--transition-fast),
+                box-shadow var(--transition-fast),
+                transform var(--transition-fast);
+        }
+
+        .btn-ghost:hover {
+            background: rgba(255, 248, 240, 1);
+            border-color: rgba(139, 47, 60, 0.5);
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
+            transform: translateY(-1px);
+        }
+
+        /* Hero */
+
+        .hero {
+            padding-block: 3.3rem 3.8rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                padding-block: 4.2rem 5rem;
+            }
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-inner {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 2.5rem;
+            }
+        }
+
+        .hero-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.3rem 0.9rem 0.3rem 0.35rem;
+            border-radius: 999px;
+            background: rgba(255, 248, 240, 0.95);
+            border: 1px solid rgba(196, 154, 71, 0.4);
+            font-size: 0.78rem;
+            color: #5b3414;
+            margin-bottom: 1rem;
+        }
+
+        .hero-kicker-badge {
+            padding: 0.16rem 0.6rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #8b2f3c, #b75a52);
+            color: #fff7ea;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+
+        .hero-title {
+            font-size: clamp(2.2rem, 3vw + 1.8rem, 3rem);
+            margin: 0 0 0.65rem;
+            letter-spacing: 0.03em;
+        }
+
+        .hero-title span {
+            color: var(--color-primary);
+        }
+
+        .hero-subtitle {
+            margin: 0 0 1.8rem;
+            font-size: 0.98rem;
+            color: var(--color-muted);
+            max-width: 34rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            align-items: center;
+            margin-bottom: 1.7rem;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.3rem;
+            font-size: 0.82rem;
+            color: var(--color-muted);
+        }
+
+        .hero-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-meta-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 999px;
+            background: radial-gradient(circle at 30% 30%, #ffe9c4, #c49a47);
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-card {
+            background: radial-gradient(circle at 0 0, #fffef8, #f4e3cf);
+            border-radius: 32px;
+            padding: 1.4rem 1.4rem 1.6rem;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: "";
+            position: absolute;
+            inset: 16%;
+            border-radius: 40%;
+            background:
+                radial-gradient(circle at 0% 0%, rgba(255, 221, 153, 0.88), transparent 55%),
+                radial-gradient(circle at 100% 100%, rgba(139, 47, 60, 0.3), transparent 60%);
+            opacity: 0.85;
+        }
+
+        .hero-card-inner {
+            position: relative;
+        }
+
+        .hero-svg {
+            width: 100%;
+            max-width: 420px;
+            margin-inline: auto;
+        }
+
+        .hero-tag {
+            position: absolute;
+            right: 0.8rem;
+            bottom: 0.8rem;
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            background: rgba(67, 34, 22, 0.95);
+            color: #fbe9c5;
+            font-size: 0.72rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .hero-tag-pill {
+            width: 16px;
+            height: 16px;
+            border-radius: 999px;
+            background: conic-gradient(from 140deg, #ffd89b, #8b2f3c, #c49a47, #ffd89b);
+            box-shadow: 0 0 0 2px rgba(251, 233, 197, 0.7);
+        }
+
+        .hero-floating-card {
+            position: absolute;
+            left: -0.2rem;
+            bottom: 0.4rem;
+            padding: 0.6rem 0.9rem;
+            border-radius: 18px;
+            background: rgba(255, 250, 242, 0.95);
+            border: 1px solid rgba(139, 47, 60, 0.12);
+            box-shadow: 0 14px 24px rgba(0, 0, 0, 0.08);
+            font-size: 0.78rem;
+            display: inline-flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            max-width: 220px;
+        }
+
+        .hero-floating-title {
+            font-weight: 600;
+            font-size: 0.78rem;
+        }
+
+        .hero-floating-sub {
+            color: var(--color-muted);
+            font-size: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-card {
+                border-radius: 26px;
+            }
+
+            .hero-floating-card {
+                left: 0.4rem;
+                bottom: -0.3rem;
+            }
+        }
+
+        /* Cards & Grids */
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1.75rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.75rem;
+        }
+
+        @media (max-width: 900px) {
+            .grid-3,
+            .grid-2 {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        .card {
+            background: var(--color-card);
+            border-radius: var(--radius-lg);
+            padding: 1.4rem 1.45rem 1.5rem;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset-inline: 0.9rem;
+            top: 0.35rem;
+            height: 46px;
+            border-radius: 999px;
+            background: radial-gradient(circle at 0 0, rgba(255, 221, 153, 0.45), transparent 60%);
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        .card-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .card-tag {
+            font-size: 0.78rem;
+            padding: 0.25rem 0.65rem;
+            border-radius: 999px;
+            background: rgba(139, 47, 60, 0.06);
+            color: var(--color-primary);
+        }
+
+        .card-body {
+            position: relative;
+            font-size: 0.92rem;
+            color: var(--color-muted);
+        }
+
+        .card-body p {
+            margin-top: 0;
+            margin-bottom: 0.6rem;
+        }
+
+        .meta-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.88rem;
+            color: var(--color-text);
+        }
+
+        .meta-list li {
+            display: flex;
+            gap: 0.45rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .meta-label {
+            min-width: 3.2rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .card-footer-note {
+            margin-top: 0.7rem;
+            font-size: 0.83rem;
+            color: var(--color-muted);
+        }
+
+        /* Contact / Footer */
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+            gap: 2.3rem;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 800px) {
+            .contact-layout {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        .contact-info-block {
+            font-size: 0.94rem;
+            color: var(--color-muted);
+        }
+
+        .contact-highlight {
+            margin-bottom: 1rem;
+            padding: 0.7rem 0.9rem;
+            border-radius: var(--radius-md);
+            background: rgba(139, 47, 60, 0.06);
+            border-left: 3px solid var(--color-primary);
+            font-size: 0.9rem;
+            color: var(--color-text);
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.2rem;
+        }
+
+        .contact-list li {
+            display: flex;
+            gap: 0.55rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-label {
+            width: 4.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 1.5rem 1.4rem 1.6rem;
+        }
+
+        .contact-form h3 {
+            margin: 0 0 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        .form-row {
+            margin-bottom: 0.9rem;
+        }
+
+        .form-row label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-size: 0.86rem;
+            color: var(--color-text);
+        }
+
+        .form-row input,
+        .form-row textarea {
+            width: 100%;
+            padding: 0.55rem 0.7rem;
+            border-radius: 9px;
+            border: 1px solid rgba(139, 47, 60, 0.22);
+            font-family: inherit;
+            font-size: 0.9rem;
+            outline: none;
+            background-color: #fffdf8;
+            transition: border-color var(--transition-fast),
+                box-shadow var(--transition-fast),
+                background-color var(--transition-fast);
+        }
+
+        .form-row input:focus,
+        .form-row textarea:focus {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 1px rgba(139, 47, 60, 0.25);
+            background-color: #ffffff;
+        }
+
+        .form-row textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .form-note {
+            font-size: 0.78rem;
+            color: var(--color-muted);
+            margin-top: 0.4rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(139, 47, 60, 0.18);
+            margin-top: 2.4rem;
+            padding-top: 1.1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--color-muted);
+        }
+
+        .footer-brand {
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .footer-credit {
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- हेडर / नेविगेशन -->
+    <header class="site-header">
+        <div class="container nav">
+            <a href="#hero" class="brand">
+                <div class="brand-mark">
+                    <span>भा</span>
+                </div>
+                <div>
+                    <div class="brand-text-main">भारत की सांस्कृतिक विरासत</div>
+                    <div class="brand-text-sub">Cultural Heritage of India</div>
+                </div>
+            </a>
+
+            <div class="nav-right">
+                <nav aria-label="मुख्य नेविगेशन">
+                    <ul class="nav-links">
+                        <li><a href="#hero" class="active">मुख्य पृष्ठ</a></li>
+                        <li><a href="#ancient-sites">प्राचीन स्थल</a></li>
+                        <li><a href="#traditional-arts">पारंपरिक कला</a></li>
+                        <li><a href="#contact">संपर्क</a></li>
+                        <li>
+                            <div class="nav-highlight">
+                                <span class="nav-highlight-dot" aria-hidden="true"></span>
+                                यूनेस्को मान्यता प्राप्त धरोहरें
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="nav-toggle" type="button" aria-label="मोबाइल मेनू बदलें" aria-expanded="false">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- हीरो सेक्शन -->
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <div class="hero-kicker">
+                        <div class="hero-kicker-badge">जीवंत इतिहास</div>
+                        <span>हज़ारों वर्षों की परंपराएँ, एक ही स्थान पर</span>
+                    </div>
+
+                    <h1 id="hero-title" class="hero-title">
+                        भारत की <span>सांस्कृतिक विरासत</span> की अनोखी झलक
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        सिंधु घाटी सभ्यता से लेकर आधुनिक भारत तक, यह भूमि मंदिरों, स्मारकों,
+                        नृत्य, संगीत और लोककथाओं के माध्यम से अपनी कहानी कहती है। आइए उन
+                        धरोहरों से मिलें जो आज भी हमारे जीवन, पहचान और संवेदना को आकार देती हैं।
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#ancient-sites" class="btn-primary">
+                            प्राचीन स्थलों को जानिए
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                        <a href="#traditional-arts" class="btn-ghost">
+                            पारंपरिक कला रूप देखें
+                        </a>
+                    </div>
+
+                    <div class="hero-meta" aria-label="संक्षिप्त तथ्य">
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-dot" aria-hidden="true"></span>
+                            <span>४०+ यूनेस्को विश्व धरोहर स्थल</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-dot" aria-hidden="true"></span>
+                            <span>सैकड़ों लोककला, नृत्य और संगीत परंपराएँ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-card">
+                        <div class="hero-card-inner">
+                            <!-- सरल सजावटी SVG, भारत की विविधता को दर्शाती हुई -->
+                            <svg class="hero-svg" viewBox="0 0 420 300" role="img">
+                                <title>भारतीय धरोहर का प्रतीकात्मक चित्र</title>
+                                <defs>
+                                    <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#fbe6c5" />
+                                        <stop offset="100%" stop-color="#e4c799" />
+                                    </linearGradient>
+                                    <linearGradient id="skyGrad" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0%" stop-color="#fff9ec" />
+                                        <stop offset="100%" stop-color="#f4e0c2" />
+                                    </linearGradient>
+                                    <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+                                        <stop offset="0%" stop-color="#ffe9b5" />
+                                        <stop offset="100%" stop-color="#f1b156" />
+                                    </radialGradient>
+                                </defs>
+
+                                <!-- आकाश -->
+                                <rect x="0" y="0" width="420" height="190" fill="url(#skyGrad)" />
+
+                                <!-- सूर्य -->
+                                <circle cx="70" cy="70" r="32" fill="url(#sunGrad)" opacity="0.95" />
+
+                                <!-- धरातल -->
+                                <rect x="0" y="180" width="420" height="120" fill="url(#groundGrad)" />
+
+                                <!-- मार्ग -->
+                                <path d="M190 190 C210 210 230 240 240 300 L180 300 C170 260 170 230 190 190 Z"
+                                      fill="#d7b077" opacity="0.9" />
+
+                                <!-- मध्य गुम्बद (ताज जैसे) -->
+                                <path d="M200 90 Q210 65 220 90 L240 140 L180 140 Z"
+                                      fill="#fdfcf8" stroke="#d2c2b0" stroke-width="2" />
+                                <rect x="185" y="140" width="50" height="55" fill="#fdfcf8"
+                                      stroke="#d2c2b0" stroke-width="2" />
+
+                                <!-- मेहराब -->
+                                <path d="M195 195 Q210 165 225 195 L225 195 L195 195 Z"
+                                      fill="#f5efe4" stroke="#cebca6" stroke-width="1.5" />
+
+                                <!-- मीनारें -->
+                                <rect x="155" y="120" width="12" height="80" fill="#fdfcf8"
+                                      stroke="#d2c2b0" stroke-width="2" />
+                                <rect x="255" y="120" width="12" height="80" fill="#fdfcf8"
+                                      stroke="#d2c2b0" stroke-width="2" />
+                                <circle cx="161" cy="120" r="6" fill="#f5efe4" stroke="#ccbba5" stroke-width="1" />
+                                <circle cx="261" cy="120" r="6" fill="#f5efe4" stroke="#ccbba5" stroke-width="1" />
+
+                                <!-- कोणार्क जैसे पहिए -->
+                                <circle cx="105" cy="210" r="22" fill="#f4d6a3" stroke="#c49a47" stroke-width="2" />
+                                <circle cx="105" cy="210" r="10" fill="#fdf7ec" stroke="#c49a47" stroke-width="1.5" />
+                                <line x1="105" y1="188" x2="105" y2="232" stroke="#c49a47" stroke-width="1.5" />
+                                <line x1="83" y1="210" x2="127" y2="210" stroke="#c49a47" stroke-width="1.5" />
+
+                                <!-- हंपी जैसे स्तंभ -->
+                                <rect x="285" y="150" width="12" height="60" fill="#f6e0bc"
+                                      stroke="#c49a47" stroke-width="1.8" />
+                                <rect x="318" y="150" width="12" height="60" fill="#f6e0bc"
+                                      stroke="#c49a47" stroke-width="1.8" />
+                                <rect x="280" y="142" width="55" height="10" fill="#f3d6aa"
+                                      stroke="#c49a47" stroke-width="1.5" />
+
+                                <!-- पेड़ -->
+                                <circle cx="40" cy="165" r="16" fill="#a8c97b" />
+                                <rect x="37" y="165" width="6" height="22" fill="#8b5a3c" />
+
+                                <circle cx="360" cy="160" r="18" fill="#9fc06f" />
+                                <rect x="357" y="160" width="6" height="24" fill="#815337" />
+                            </svg>
+
+                            <div class="hero-floating-card">
+                                <div class="hero-floating-title">समय की यात्रा</div>
+                                <div class="hero-floating-sub">
+                                    मुग़ल स्थापत्य, द्रविड़ शैली, मंदिर नगरियाँ और लोक परंपराएँ —
+                                    सब एक ही देश की धरोहर।
+                                </div>
+                            </div>
+
+                            <div class="hero-tag">
+                                <span class="hero-tag-pill"></span>
+                                ५०००+ वर्षों की सभ्यता
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- प्राचीन स्थल सेक्शन -->
+        <section id="ancient-sites" class="section section-alt" aria-labelledby="ancient-heading">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 id="ancient-heading">प्राचीन स्थल</h2>
+                    <p>
+                        भारत के प्राचीन नगर, मंदिर और स्मारक न सिर्फ़ स्थापत्य की दृष्टि से अनूठे हैं,
+                        बल्कि वे राजनीति, समाज और आध्यात्मिकता के बदलते स्वरूप के साक्षी भी रहे हैं।
+                        यहाँ तीन ऐसे प्रमुख स्थलों की झलक प्रस्तुत है।
+                    </p>
+                </div>
+
+                <div class="grid-3">
+                    <!-- ताजमहल -->
+                    <article class="card">
+                        <header class="card-header">
+                            <h3 class="card-title">ताजमहल, आगरा</h3>
+                            <span class="card-tag">यूनेस्को विश्व धरोहर</span>
+                        </header>
+                        <div class="card-body">
+                            <p>
+                                १७वीं शताब्दी में निर्मित ताजमहल मुग़ल सम्राट शाहजहाँ द्वारा अपनी
+                                पत्नी मुमताज़ महल की स्मृति में बनवाया गया एक भव्य मक़बरा है।
+                                सफ़ेद संगमरमर पर की गई नाज़ुक कारीगरी और संतुलित अनुपात इसे
+                                शाश्वत प्रेम का वैश्विक प्रतीक बनाते हैं।
+                            </p>
+                            <ul class="meta-list">
+                                <li>
+                                    <span class="meta-label">स्थान</span>
+                                    <span>आगरा, उत्तर प्रदेश, यमुना नदी के तट पर</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">काल</span>
+                                    <span>लगभग १६३२ – १६५३ ई.</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">शैली</span>
+                                    <span>फारसी, तुर्की और भारतीय तत्वों वाला मुग़ल स्थापत्य</span>
+                                </li>
+                            </ul>
+                            <p class="card-footer-note">
+                                पूर्णिमा की चांदनी में ताजमहल की चमक और प्रतिबिंब देखने लायक़ होता है,
+                                जो संगमरमर को जीवंत सा बना देता है।
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- कोणार्क सूर्य मंदिर -->
+                    <article class="card">
+                        <header class="card-header">
+                            <h3 class="card-title">कोणार्क सूर्य मंदिर</h3>
+                            <span class="card-tag">ओडिशा की धरोहर</span>
+                        </header>
+                        <div class="card-body">
+                            <p>
+                                कोणार्क का सूर्य मंदिर १३वीं शताब्दी का एक भव्य मंदिर है,
+                                जिसे सूर्य देव के रथ के रूप में गढ़ा गया है। विशाल पत्थर के
+                                पहिए, घोड़े और सूक्ष्म मूर्तिकला इसकी विशिष्ट पहचान हैं।
+                            </p>
+                            <ul class="meta-list">
+                                <li>
+                                    <span class="meta-label">स्थान</span>
+                                    <span>कोणार्क, पुरी ज़िला, ओडिशा</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">काल</span>
+                                    <span>लगभग १२५० ई., पूर्वी गंग वंश के समय</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">विशेष</span>
+                                    <span>पत्थर के १२ विशाल रथ-पहिए, सूर्य की चाल का प्रतीक</span>
+                                </li>
+                            </ul>
+                            <p class="card-footer-note">
+                                मंदिर के शिल्प में नृत्य, संगीत, युद्ध और दैनंदिन जीवन के अनेक दृश्य
+                                उकेरे गए हैं, जो तत्कालीन समाज का जीवंत दस्तावेज़ हैं।
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- हंपी -->
+                    <article class="card">
+                        <header class="card-header">
+                            <h3 class="card-title">हंपी, विजयनगर साम्राज्य</h3>
+                            <span class="card-tag">दक्षिण भारत की नगरी</span>
+                        </header>
+                        <div class="card-body">
+                            <p>
+                                हंपी एक समय विजयनगर साम्राज्य की समृद्ध राजधानी थी। आज इसके
+                                खंडहरों में विशाल मंदिर, बाज़ार, पत्थर के रथ और जल-प्रबंधन
+                                प्रणालियाँ देखने को मिलती हैं, जो उन्नत शहरी नियोजन का प्रमाण हैं।
+                            </p>
+                            <ul class="meta-list">
+                                <li>
+                                    <span class="meta-label">स्थान</span>
+                                    <span>तुंगभद्रा नदी के किनारे, कर्नाटक</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">काल</span>
+                                    <span>१४वीं–१६वीं शताब्दी, विजयनगर काल</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">मुख्य</span>
+                                    <span>विरुपाक्ष मंदिर, विठ्ठल मंदिर, पत्थर का रथ, संगीत स्तंभ</span>
+                                </li>
+                            </ul>
+                            <p class="card-footer-note">
+                                हंपी के ग्रेनाइट चट्टानों के बीच बसे मंदिर और मंडप प्राकृतिक परिदृश्य
+                                के साथ घुलते-मिलते हैं, मानो सभ्यता और प्रकृति का सुंदर संवाद हो।
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- पारंपरिक कला सेक्शन -->
+        <section id="traditional-arts" class="section" aria-labelledby="arts-heading">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 id="arts-heading">पारंपरिक कला</h2>
+                    <p>
+                        भारतीय कला केवल प्रदर्शन नहीं, बल्कि आध्यात्मिक साधना और लोक-स्मृति की वाहक भी है।
+                        नृत्य, संगीत, चित्रकला और शिल्प, सभी मिलकर भारत की सांस्कृतिक आत्मा को अभिव्यक्त करते हैं।
+                    </p>
+                </div>
+
+                <div class="grid-2">
+                    <!-- भरतनाट्यम -->
+                    <article class="card">
+                        <header class="card-header">
+                            <h3 class="card-title">भरतनाट्यम नृत्य</h3>
+                            <span class="card-tag">शास्त्रीय नृत्य</span>
+                        </header>
+                        <div class="card-body">
+                            <p>
+                                भरतनाट्यम दक्षिण भारत, विशेषकर तमिलनाडु की देवदासी परंपरा से विकसित
+                                एक प्राचीन शास्त्रीय नृत्य शैली है। इसकी जड़ें "नाट्यशास्त्र" जैसे
+                                प्राचीन ग्रंथों तक जाती हैं।
+                            </p>
+                            <ul class="meta-list">
+                                <li>
+                                    <span class="meta-label">उत्पत्ति</span>
+                                    <span>मंदिरों में भक्ति प्रदर्शन के रूप में</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">शैली</span>
+                                    <span>सटीक पदचालन, हस्त-मुद्राएँ (मुद्रा), और भाव-प्रदर्शन (अभिनय)</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">थीम</span>
+                                    <span>भक्ति, प्रेम, दर्शन और लोक कथाएँ</span>
+                                </li>
+                            </ul>
+                            <p class="card-footer-note">
+                                आज भरतनाट्यम विश्व भर के मंचों पर भारतीय सौंदर्यबोध, अनुशासन और
+                                आध्यात्मिकता का प्रतिनिधित्व करता है।
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- मधुबनी चित्रकला -->
+                    <article class="card">
+                        <header class="card-header">
+                            <h3 class="card-title">मधुबनी चित्रकला</h3>
+                            <span class="card-tag">लोक कला</span>
+                        </header>
+                        <div class="card-body">
+                            <p>
+                                मधुबनी या मिथिला पेंटिंग बिहार और नेपाल के तराई क्षेत्र की पारंपरिक
+                                लोक चित्रकला है। इसे प्राचीन काल से विवाह, पर्व और अनुष्ठानों के
+                                अवसर पर दीवारों व फर्श पर बनाया जाता रहा है।
+                            </p>
+                            <ul class="meta-list">
+                                <li>
+                                    <span class="meta-label">माध्यम</span>
+                                    <span>प्राकृतिक रंग, खनिज, फूल-पत्तियों से बने रंग, हस्तनिर्मित कागज</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">रूप</span>
+                                    <span>समतल पृष्ठभूमि, दोहराए जाने वाले पैटर्न, सूक्ष्म रेखाएँ</span>
+                                </li>
+                                <li>
+                                    <span class="meta-label">विषय</span>
+                                    <span>रामायण, कृष्ण लीला, लोक देवियाँ, प्रकृति और दैनिक जीवन</span>
+                                </li>
+                            </ul>
+                            <p class="card-footer-note">
+                                मधुबनी चित्रकला ने ग्रामीण महिलाओं को न केवल सांस्कृतिक पहचान दी,
+                                बल्कि आजीविका और स्वावलंबन का महत्वपूर्ण साधन भी बनाया।
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- संपर्क / फूटर सेक्शन -->
+        <footer id="contact" class="section section-alt" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-heading" style="text-align:left; max-width:640px;">
+                    <h2 id="contact-heading">संपर्क एवं सुझाव</h2>
+                    <p>
+                        यदि आप भारतीय सांस्कृतिक विरासत से जुड़े किसी विशेष स्थल, कला रूप या लोककथा
+                        को साझा करना चाहते हैं, तो हमें अवश्य लिखें। आपका योगदान इस विरासत को संरक्षित
+                        रखने की यात्रा में महत्त्वपूर्ण है।
+                    </p>
+                </div>
+
+                <div class="contact-layout">
+                    <div class="contact-info-block">
+                        <div class="contact-highlight">
+                            यह वेबसाइट अध्ययन और प्रेरणा के उद्देश्य से बनाई गई एक
+                            सांस्कृतिक झलक है। कृपया इसे और समृद्ध बनाने के लिए अपने विचार साझा करें।
+                        </div>
+
+                        <ul class="contact-list" aria-label="संपर्क जानकारी">
+                            <li>
+                                <span class="contact-label">ईमेल</span>
+                                <span>heritage@bharat.org</span>
+                            </li>
+                            <li>
+                                <span class="contact-label">फ़ोन</span>
+                                <span>+९१-९८७६५-४३२१०</span>
+                            </li>
+                            <li>
+                                <span class="contact-label">पता</span>
+                                <span>नई दिल्ली, भारत</span>
+                            </li>
+                        </ul>
+
+                        <p>
+                            आप अपने शहर, गाँव या परिवार से जुड़ी किसी अनूठी परंपरा, त्यौहार या
+                            लोककला की जानकारी हमें भेज सकते हैं। उचित संदर्भ सहित चुनी गई जानकारियों
+                            को आगे के अद्यतनों में शामिल किया जा सकता है।
+                        </p>
+                    </div>
+
+                    <form class="contact-form" action="#" method="post">
+                        <h3>अपना संदेश भेजें</h3>
+                        <div class="form-row">
+                            <label for="name">नाम</label>
+                            <input type="text" id="name" name="name" placeholder="अपना पूरा नाम लिखें" />
+                        </div>
+                        <div class="form-row">
+                            <label for="email">ईमेल</label>
+                            <input type="email" id="email" name="email" placeholder="उदाहरण: naam@domain.com" />
+                        </div>
+                        <div class="form-row">
+                            <label for="message">संदेश / सुझाव</label>
+                            <textarea id="message" name="message" placeholder="संक्षेप में अपना संदेश लिखें"></textarea>
+                            <p class="form-note">
+                                नोट: यह आदर्श फ़ॉर्म है; वास्तविक प्रेषण के लिए सर्वर-साइड प्रक्रम आवश्यक होगा।
+                            </p>
+                        </div>
+                        <button type="submit" class="btn-primary">संदेश जमा करें</button>
+                    </form>
+                </div>
+
+                <div class="footer-bottom">
+                    <div>
+                        <span class="footer-brand">भारत की सांस्कृतिक विरासत</span> —
+                        &copy; २०२५. सर्वाधिकार सुरक्षित।
+                    </div>
+                    <div class="footer-credit">
+                        डिज़ाइन एवं संकल्पना: <strong>UTKForce</strong>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // केवल मोबाइल मेनू टॉगल के लिए साधारण JavaScript
+        (function () {
+            const header = document.querySelector(".site-header");
+            const toggle = document.querySelector(".nav-toggle");
+            const links = document.querySelectorAll(".nav-links a");
+
+            if (!header || !toggle) return;
+
+            toggle.addEventListener("click", () => {
+                const isOpen = header.classList.toggle("nav-open");
+                toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            });
+
+            // लिंक पर क्लिक होने पर मोबाइल मेनू बंद करें
+            links.forEach((link) => {
+                link.addEventListener("click", () => {
+                    if (header.classList.contains("nav-open")) {
+                        header.classList.remove("nav-open");
+                        toggle.setAttribute("aria-expanded", "false");
+                    }
+                    // सक्रिय लिंक हाइलाइट
+                    links.forEach((l) => l.classList.remove("active"));
+                    link.classList.add("active");
+                });
+            });
+        })();
+    </script>
+</body>
+  </html>
